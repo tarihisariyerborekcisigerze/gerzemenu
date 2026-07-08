@@ -277,9 +277,11 @@ return `images/${slugify(name)}.png`;
 const DEFAULT_INFO = { kcal:"—", gluten:"Belirtilmemiş", allergens:"Belirtilmemiş" };
 
 const INFO = {
+"Flat White":{kcal:110,gluten:"Yok",allergens:"Süt"},
+"Iced Flat White":{kcal:110,gluten:"Yok",allergens:"Süt"},
 "Espresso":{kcal:5,gluten:"Yok",allergens:"Yok"},
 "Americano":{kcal:10,gluten:"Yok",allergens:"Yok"},
-"Filter Coffee":{kcal:5,gluten:"Yok",allergens:"Yok"},
+"Filtre Kahve":{kcal:5,gluten:"Yok",allergens:"Yok"},
 "Latte":{kcal:120,gluten:"Yok",allergens:"Süt"},
 "Cappuccino":{kcal:110,gluten:"Yok",allergens:"Süt"},
 "Caramel Latte":{kcal:220,gluten:"Yok",allergens:"Süt"},
@@ -289,7 +291,7 @@ const INFO = {
 "Vanilla Cream":{kcal:220,gluten:"Yok",allergens:"Süt"},
 "Cookie Latte":{kcal:250,gluten:"İçerir (kurabiye aroması)",allergens:"Süt, Gluten"},
 "Ice Americano":{kcal:10,gluten:"Yok",allergens:"Yok"},
-"Ice Filter Coffee":{kcal:10,gluten:"Yok",allergens:"Yok"},
+"Ice Filtre Kahve":{kcal:10,gluten:"Yok",allergens:"Yok"},
 "Ice Latte":{kcal:130,gluten:"Yok",allergens:"Süt"},
 "Ice Mocha":{kcal:240,gluten:"Yok",allergens:"Süt, Kakao"},
 "Ice White Mocha":{kcal:250,gluten:"Yok",allergens:"Süt, Kakao"},
@@ -370,9 +372,10 @@ const data = [
 cat:"Coffee",
 sizes:["8 OZ","14 OZ"],
 items:[
+["Flat White",250, 250],
 ["Espresso",100,150],
 ["Americano",150,170],
-["Filter Coffee",160,170],
+["Filtre Kahve",150,150],
 ["Latte",160,180],
 ["Cappuccino",160,180],
 ["Caramel Latte",180,200],
@@ -386,8 +389,9 @@ items:[
 {
 cat:"Soğuk Kahveler",
 items:[
+["Ice Flat White",250],
 ["Ice Americano",180],
-["Ice Filter Coffee",180],
+["Ice Filtre Kahve",150],
 ["Ice Latte",200],
 ["Ice Mocha",220],
 ["Ice White Mocha",220],
